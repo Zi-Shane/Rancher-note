@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment2
+  labels:
+    app: nginx
+spec:
+  restartPolicy: Never
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+        volumeMounts:
+        - name: html-vol
+          mountPath: /usr/share/nginx/html
+        # - name: conf
+        #   mountPath: /etc/nginx/conf.d
+        ports:
+        - containerPort: 80
+      - name: debian-container
+        image: debian
+        volumeMounts:
+        - name: html-vol
+          mountPath: /html-vol
+        # - name: conf
+        #   mountPath: /conf
+        command: ["/bin/sh", "-c"]
+        args:
+        - mkdir /html &&
+          echo "from debian-container" >> /html/index.html &&
+          cp /html/index.html /html-vol &&
+          while true; do
+            date >> /index.html;
+            sleep 1;
+          done
+
+      volumes:
+      - name: html-vol
+        emptyDir: {}
+      # - name: conf
+      #   emptyDir: {}
+

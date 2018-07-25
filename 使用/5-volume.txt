@@ -1,0 +1,3 @@
+# mount volume 覆蓋資料問題
+
+![](\\140.109.143.3\技術組工讀生專區\2018實習\子軒\k8s\note\volume prob\1.PNG)
