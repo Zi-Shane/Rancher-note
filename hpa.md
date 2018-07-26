@@ -83,4 +83,4 @@ helloworld-hpa   Deployment/helloworld-deployment   0%/50%     1         5      
 ```  
 - 也可以透過 grafana 監控  
 
-![](hpa\7.PNG)
+![](hpa/7.PNG)

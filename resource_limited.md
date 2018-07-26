@@ -62,4 +62,4 @@ spec:
 ### Rancher 設定
 - Edit-> Advance Option-> Security & Host Congig  
 
-![](resource/1.png)
+![](resource/1.PNG)

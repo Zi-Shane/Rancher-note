@@ -2,15 +2,15 @@
 ## 設定步驟
 1. Peoject-> Resources-> Config Maps
 到 prometheus-server 設定 ConfigMap
-![](./Alert_Manager/1.PNG)
+![](Alert_Manager/1.PNG)
 2. 將設定寫在 alerts 欄位
-![](Alert_Manager\2.png)
+![](Alert_Manager/2.PNG)
 3. 到 LoadBalancing 會找到三個管理網頁的網址，選 prometheus-server 的 URL
-![](Alert_Manager\3.PNG)
+![](Alert_Manager/3.PNG)
 4. 再到 Status-> Rule 可以找到剛剛設定的 Rule
-![](Alert_Manager\4.PNG)
+![](Alert_Manager/4.PNG)
 5. 等一段時間後，prometheus-alertmanageer 的 頁面，可以看到被觸發的警告事件
-![](Alert_Manager\5.PNG)
+![](Alert_Manager/5.PNG)
 
 
 ## Rule example
