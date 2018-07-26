@@ -1,13 +1,21 @@
-# Rancher 部署服務
-
-1. cluster > Project ，按 Deploy
-
-![](C:\Users\ASDC\Desktop\note\使用\0.PNG)
-
-2. 輸入設定
-
-![1](C:\Users\ASDC\Desktop\note\使用\1.PNG)
-
-3. 環境變數
-
-![2](C:\Users\ASDC\Desktop\note\使用\2.PNG)
+# Rancher
+### 必要設定
+![](使用\1.PNG)
+### 環境變數設定
+![](使用\2.PNG)
+### 指定節點
+![](使用\3.PNG)
+### 檢測 Pod 是否正常執行 
+![](使用\4-1.PNG)
+![](使用\4-2.PNG)
+### Pod 啟動規則  
+![](使用\5.PNG)
+### 啟動後執行 Command
+![](使用\6.PNG)
+### Network
+![](使用\7.PNG)
+### Lable & Annotations
+![](使用\8.PNG)
+### 安全設定 & 資源限制
+![](使用\9.PNG)
+![](使用\10.PNG)

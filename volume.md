@@ -1,11 +1,52 @@
 # volume 使用
+- emptydir
+- configmap
+- secret
+- persistent volume
+    - 設定 nfs 當 persistent volume
+    - 掛載 nfs 當 persistent volume
 
 ## emptydir
+暫時的儲存空間，Pod 內的 container 都可以存取，但資料會在 Pod 被刪除時消失
+1. 到 Deployment 新增 volume (Add volume-> Use a Empa)，選 Empty Dir Volume，設定大小
+![](volume\emptydir\1.PNG)
+2. 設定 mountPath
+![](volume\emptydir\2.PNG)
+
 ---
-## configmap
+## configmap  
+configmap 是用來儲存機密資料的 volume，像是 nginx 的設定檔
+1. 到 Peoject-> Resources，新增一個 Secret (按 Add Secret)
+2. 設定 Value
+![](volume\configmap\1.png)
+3. 到 Deployment 新增 volume (Add volume-> Use a configmap)，設定 permission, mountPath
+![](volume\configmap\4.png)
+4. 在 mountPath 下可以找到 secret file  
+![](volume\configmap\3.png)
+
+
 ---
 ## secret
+secret 是用來儲存機密資料，像是 ip, passowrd....  
+- 可以用 volume 用掛載檔案的方式，把 secret 存成檔案傳入
+- 用 enviroment variable，傳入  
+1. 到 Peoject-> Resources，新增一個 Secret (按 Add Secret)
+![](volume\secret\0.png)
+2. 設定 Value
+![](volume\secret\1.png)
+3. 用檔案傳入：  
+到 Deployment 新增 volume (Add volume-> Use a secret) 
+![](volume\secret\2.png)
+or 用環境變數傳入：  
+到 Deployment 新增 ENV (Add From Source)
+![](volume\secret\4.PNG)
+4. 在 mountPath 下可以找到 secret file  
+![](volume\secret\3.PNG)
+or  
+ENV 可以找到設定的 secret
+![](volume\secret\5.PNG)
 ---
+
 ## persistent volume
 - [Rancher 關於 persistent volume 的介紹](https://rancher.com/docs/rancher/v2.x/en/concepts/volumes-and-storage/)
 ### 設定 nfs 當 persistent volume  
@@ -66,10 +107,11 @@ Rancher-> Cluster-> Storage-> Storage Classes
 
 ### 掛載 nfs 當 persistent volume 
 hint: 
-pv = persistent volume
-pvc = persistent volume claim
-sc = Storage Class
-兩種方式  
+- pv = persistent volume  
+- pvc = persistent volume claim
+- sc = Storage Class  
+
+#### 兩種掛載方式  
 1. 建立 Deployment 同時以 pvc 新增一個 pv
 2. 建立 Deployment 時，指定已經存在的 pv
 - 第1種方式 - 建立 Deployment 同時以 pvc 新增一個 pv  
