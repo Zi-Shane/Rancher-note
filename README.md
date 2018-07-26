@@ -1,5 +1,6 @@
 # CONTENTS
 
+### [Volume](https://github.com/Zi-Shane/Rancher-note/blob/master/volume.md)
 ### [Alert Manager](https://github.com/Zi-Shane/Rancher-note/blob/master/Alert_Manager.md)
 ### [Grafana and Promethous Install guide](https://github.com/Zi-Shane/Rancher-note/blob/master/Grafana%20and%20Promethous%20Install%20guide.md)
 ### [Horizontal Pod Autoscaler](https://github.com/Zi-Shane/Rancher-note/blob/master/hpa.md)
