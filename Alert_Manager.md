@@ -2,7 +2,7 @@
 ## 設定步驟
 1. Peoject-> Resources-> Config Maps
 到 prometheus-server 設定 ConfigMap
-![](./Alert_Manager/1.png)
+![](./Alert_Manager/1.PNG)
 2. 將設定寫在 alerts 欄位
 ![](Alert_Manager\2.png)
 3. 到 LoadBalancing 會找到三個管理網頁的網址，選 prometheus-server 的 URL
