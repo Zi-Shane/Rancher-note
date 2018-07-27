@@ -3,7 +3,7 @@
 step 1.  
 開一個 deployment，Workload Type 選 `Run on a cron schedule`，設定排程時間  
 ![Alt text](cron_job/1.PNG)
-設定執行指令，Auto Restart 設為 `Never`
+設定執行指令，Auto Restart 設為 `Never` or `On faliure`
 ```bash
 # sample command
 echo "Hi, current time is " && date
