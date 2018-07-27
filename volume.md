@@ -43,7 +43,7 @@ or 用環境變數傳入：
 4. 在 mountPath 下可以找到 secret file  
 ![](volume/secret/3.PNG)
 or  
-ENV 可以找到設定的 secret
+ENV 可以找到設定的 secret  
 ![](volume/secret/5.PNG)
 ---
 
