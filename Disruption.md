@@ -1,7 +1,7 @@
 # Disruption (服務中斷測試)
 - [設定縮短 node NotReady 時間](#設定縮短-node-NotReady-時間)
 - [正常 node 關閉程序](#正常-node-關閉程序)
-- [master/node 的 shutdown/crash 測試](#master/node-的-shutdown/crash-測試)
+- [master/node 的 shutdown/crash 測試](#masternode-的-shutdowncrash-測試)
 - [mysql shutdown/crash 測試](#mysql-shutdowncrash-測試)
 
 
