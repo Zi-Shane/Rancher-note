@@ -7,7 +7,7 @@ Rancher 目前尚無法從UI設定
   預設一份 replicas  
   - `resources.requests.cpu`  
   當 Kubernetes 在運行該 Pod 時，需要配置 20m CPU 給該 Pod  
-  ( 20milicpu(milicore)，代表要求一個 CPU 2% )
+  ( 200milicpu(milicore)，代表要求一個 CPU 0.2 core )
 ```yaml
 # hello-deployment.yaml
 apiVersion: apps/v1beta2

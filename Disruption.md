@@ -103,10 +103,10 @@ node 狀態顯示為 NotReady
 
 ---
 ## mysql shutdown\/crash 測試
-- mysql insert into 時 pod 被刪除
+- mysql insert into 大量資料時， pod 被刪除
     - 新資料不會被寫入，維持寫入前狀態  
     `ERROR 2013 (HY000) at line 1: Lost connection to MySQL server during query`
 
-- mysql insert into 時 node shutdown
+- mysql insert into 大量資料時 node 被 shutdown
     - 新資料不會被寫入，維持寫入前狀態
 

@@ -21,6 +21,9 @@
     0 <= `request` <= Node Allocatable  
     `request` <= `limit` <= Infinity
 
+### Specify a CPU request that is too big for your Nodes
+- A Pod is scheduled to run on a Node only if the Node has enough CPU resources available to satisfy the Pod’s CPU request
+
 ### YAML example
 ```yaml
 apiVersion: apps/v1
