@@ -1,7 +1,7 @@
 # volume 使用
-- [EmptyDir](#EmptyDir)
-- [configmap](#ConfigMap)
-- [Secret](#Secret)
+- [EmptyDir](#emptydir)
+- [configmap](#configmap)
+- [Secret](#secret)
 - [persistent volume](#persistent-volume)
     - [設定 nfs 當 persistent volume](#設定-nfs-當-persistent-volume)
     - [掛載 nfs 當 persistent volume](#掛載-nfs-當-persistent-volume)
