@@ -8,15 +8,16 @@
 
 ## EmptyDir
 暫時的儲存空間，同一個 Pod 內的 container 都可以存取，但資料會在 Pod 被刪除時消失
-1. 到 Deployment 新增 volume (Add volume-> Use a Empa)，選 Empty Dir Volume，設定大小
+1. 到 Deployment 新增 volume (Add volume-> Use a Emhemeral)，選 Empty Dir Volume，設定大小
 ![](volume/emptydir/1.PNG)
 2. 設定 mountPath
 ![](volume/emptydir/2.PNG)
+3. Upgrade 完成
 
 ---
 ## ConfigMap  
 configmap 是用來儲存設定檔案的 volume，例如 nginx 的設定檔
-1. 到 Peoject-> Resources，新增一個 ConfigMap (按 Add Secret)
+1. 到 Peoject-> Resources，新增一個 ConfigMap (按 Add Config Map)
 2. 設定 Value
 ![](volume/configmap/1.PNG)
 3. 到 Deployment 新增 volume (Add volume-> Use a configmap)，設定 permission, mountPath
