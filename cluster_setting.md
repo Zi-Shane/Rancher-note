@@ -9,9 +9,9 @@ https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/
 ...
 ...
 services:
-    kubelet: 
-        extra_args: 
-            max-pods: "200"
+  kubelet: 
+    extra_args: 
+      max-pods: "200"
 ```
 
 ## 節點負荷
@@ -20,3 +20,8 @@ services:
 
 ![](cluster_setting/1.PNG)
 https://tachingchen.com/tw/blog/kubernetes-101/
+
+
+## 快速部屬
+- Ansible
+https://docs.ansible.com/ansible/2.6/modules/vmware_guest_module.html
