@@ -120,21 +120,21 @@ Rancher-> Cluster-> Storage-> Storage Classes
     1. [建立 Deployment 同時以 pvc 新增一個 pv](#第1種方式---建立-Deployment-同時以-pvc-新增一個-pv)
     2. [建立 Deployment 時，指定已經存在的 pv](#第2種方式---建立-Deployment-時，指定已經存在的-pv)
 #### 第1種方式 - 建立 Deployment 同時以 pvc 新增一個 pv  
-    1. 找到 volumes 欄位選 `Add a new persistent volume`
-    ![](volume/pv/newpvc/1.PNG)
-    ![](volume/pv/newpvc/2.PNG)
-    2. 設定 pvc，在某個 sc 設定的儲存空間建立 pv
-    ![](volume/pv/newpvc/3.PNG)
-    3. 設定 mountPath
-    ![](volume/pv/newpvc/4.PNG)
-    4. 到 Project 下的 volumes 可以看到剛建立的 pv 就完成了
+1. 找到 volumes 欄位選 `Add a new persistent volume`
+![](volume/pv/newpvc/1.PNG)
+![](volume/pv/newpvc/2.PNG)
+2. 設定儲存空間位置 (Storage Class) 空間大小
+![](volume/pv/newpvc/3.PNG)
+3. 設定 mountPath
+![](volume/pv/newpvc/4.PNG)
+4. 到 Project 下的 volumes 可以看到剛建立的 pv 就完成了
 
 #### 第2種方式 - 建立 Deployment 時，指定已經存在的 pv  
-    1. 新增 pv
-    ![](volume/pv/prepvc/1.PNG)
-    2. 設定 pvc，在某個 sc 設定的儲存空間建立 pv
-    ![](volume/pv/prepvc/2.PNG)
-    3. 完成後可以看到剛建立的 pv
-    4. 再到 deployment 裡面，找到 volumes 欄位選 `use an existing persistent volume`，設定 mountPath，就完成了
-    ![](volume/pv/prepvc/3.PNG)
+1. 新增 pv
+![](volume/pv/prepvc/1.PNG)
+2. 設定儲存空間位置 (Storage Class) 空間大小
+![](volume/pv/prepvc/2.PNG)
+3. 完成後可以看到剛建立的 pv
+4. 再到 deployment 裡面，找到 volumes 欄位選 `use an existing persistent volume`，設定 mountPath，就完成了
+![](volume/pv/prepvc/3.PNG)
 
