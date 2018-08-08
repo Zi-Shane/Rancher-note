@@ -16,14 +16,19 @@ https://rancher.com/docs/rancher/v2.x/en/cluster-provisioning/rke-clusters/node-
 ![](安裝/1.PNG)
 ![](安裝/2-2.PNG)
 ![](安裝/7.PNG)
-Template 設定 (ESXi Server 位置, ESXi 使用者, VM 規格, 網路介面)
+Template 設定 (ESXi Server 位置, ESXi 使用者, VM 規格, 網路介面)  
+Cloud init 可以自訂 RancherOS 設定
+([doc](https://rancher.com/docs/os/v1.x/en/installation/configuration/))
+- master 2-4G
+- etcd 6-8G
+- node 8G (最少4G)
 ![](安裝/8.PNG)
 ![](安裝/9.PNG)
 等待一段時間，若是遇到錯誤它會自己重新設定。
 當下方訊息出現 `Waiting to register with Kubernetes` 就是安裝完成了，等到所有 VM 都完成，會開始啟動 Cluster
 ![](安裝/6.PNG)
 ![](安裝/5.PNG)
-master 和 etcd 會先啟動，最後才是 node
+master 和 etcd 會先啟動，最後才是 node 
 ![](安裝/10.PNG)
 ## 3. 完成
 ---

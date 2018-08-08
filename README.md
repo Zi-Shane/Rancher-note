@@ -9,3 +9,5 @@
 ### [資料覆蓋問題](https://github.com/Zi-Shane/Rancher-note/blob/master/%E8%B3%87%E6%96%99%E8%A6%86%E8%93%8B%E5%95%8F%E9%A1%8C.md)
 ### [shutdown/crash 測試](https://github.com/Zi-Shane/Rancher-note/blob/master/Disruption.md)
 ### [cluster_setting](https://github.com/Zi-Shane/Rancher-note/blob/master/cluster_setting.md)
+### [ESXi部署](https://github.com/Zi-Shane/Rancher-note/blob/master/大量部署ESXi.md)
+### [服務對外方法](https://github.com/Zi-Shane/Rancher-note/blob/master/對外服務.md)
