@@ -62,7 +62,7 @@ ENV 可以找到設定的 secret
         (指定要部署在哪個 `namespace`，修改clusterrolebinding.yaml的 `namespace`)
 - 部署Provisioner
         1. `deploy/deployment.yaml`  
-        (修改其中的：`PROVISIONER_NAME`、`NFS_SERVER`、`NFS_PATH`，NFS的位置等資料，**有四處需要修改**)  
+        (修改其中的：`PROVISIONER_NAME`、`NFS_SERVER`、`NFS_PATH`，NFS的位置等資料，**有5處需要修改**)  
 #### 範例:
 ```yaml
 # deploy/deployment.yaml
@@ -82,7 +82,7 @@ spec:
             mountPath: /persistentvolumes
         env:
         - name: PROVISIONER_NAME
-            value: provisioner-nfs 
+            value: provisioner-nfs  # **此處需要修改**
         - name: NFS_SERVER
             value: 172.16.100.37  # **此處需要修改**
         - name: NFS_PATH
